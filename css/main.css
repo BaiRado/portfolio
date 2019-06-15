@@ -13,18 +13,18 @@ a:active {
 
 nav {
     position: fixed;
-    background: transparent;
-    height: 50px;
-    padding-left: 20px;
+    margin-left: 20px;
     z-index: 20;
 }
 
 nav div {
-    padding: 15px 5px;
     float: left;
+    margin: 5px;
 }
 
 nav a {
+    display: block;
+    text-align: center;
     font-weight: 800;
     text-transform: uppercase;
     background: rgb(200, 200, 200);
@@ -60,6 +60,8 @@ section {
     background: #365991;   
     color: #FFF;
     border-bottom: 3px black solid;
+    display: grid;
+    justify-items: center;
 }
 
 #contact {
@@ -117,12 +119,9 @@ h2 {
 
 #portfolioContent {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     grid-row-gap: 30px;
-    justify-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    grid-column-gap: 30px;
 }
 
 .portfolioListing {
@@ -251,4 +250,30 @@ h2 {
 ::selection {
     background: #000;
     color: #FFF;
+}
+
+@media screen and (max-width: 1023px){
+    nav {        
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    nav div {
+        float: none;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 15px 0;
+    }
+
+    #portfolioContent {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 660px){
+    #portfolioContent {
+        grid-template-columns: auto;
+    }
 }
