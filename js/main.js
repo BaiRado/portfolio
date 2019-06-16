@@ -1,5 +1,5 @@
-let mainNav = document.querySelector(".main-navigation");
-let navMenuBtn = document.getElementById("nav-menu-button");
+const mainNav = document.querySelector(".main-navigation");
+const navMenuBtn = document.getElementById("nav-menu-button");
 
 function copyText(e) {
     //if not left click return
@@ -22,13 +22,13 @@ function copyText(e) {
 }
 
 function scrollFunc() {
-    let currScroll = document.documentElement.scrollTop + window.innerHeight
+    let scrollPos = document.documentElement.scrollTop
 
-    if (currScroll >= about.clientHeight + portfolio.clientHeight + contact.clientHeight) {
+    if (scrollPos + window.innerHeight >= about.clientHeight + portfolio.clientHeight + contact.clientHeight) {
         aboutNav.className = '';
         portfolioNav.className = '';
         contactNav.className = 'active';
-    } else if (currScroll >= about.clientHeight + portfolio.clientHeight) {
+    } else if (scrollPos + 100 >= about.clientHeight) {
         aboutNav.className = '';
         portfolioNav.className = 'active';
         contactNav.className = '';
