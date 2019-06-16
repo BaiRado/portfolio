@@ -17,9 +17,24 @@ nav {
     z-index: 20;
 }
 
-nav div {
+#nav-menu-bar {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
     float: left;
     margin: 5px;
+}
+
+nav li :hover {
+    background: #2b2e34;
+    color: white;
 }
 
 nav a {
@@ -31,11 +46,6 @@ nav a {
     color: black;    
     padding: 10px 25px;
     border: 1px black solid;
-}
-
-nav div :hover {
-    background: #2b2e34;
-    color: white;
 }
 
 .active {
@@ -258,13 +268,63 @@ h2 {
         width: 100%;
     }
 
-    nav div {
+    #nav-menu-bar {
+        display: block;
+    }
+
+    .main-navigation.extended .nav-extendable {
+        height: 160px;
+    }
+
+    #nav-menu-button {
+        display: block;
+        background: #2b2e34;
+        padding: 15px 20px;
+    }
+
+    .menu-icon {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin-bottom: 6px;
+        margin-left: auto;
+        transition: 0.4s;
+    } 
+
+    .main-navigation.extended 
+    .menu-icon:nth-child(1) {  
+        transform-origin: right;
+        transform: rotate(-45deg) translate(-3px, -4px);
+    }
+
+    .main-navigation.extended 
+    .menu-icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .main-navigation.extended 
+    .menu-icon:nth-child(3) {
+        transform-origin: right;
+        transform: rotate(45deg) translate(-2px, 5px);
+    }
+
+    .nav-extendable {
+        height: 0;
+        transition: height .4s;
+        overflow: hidden;
+    }
+
+    nav li  {
         float: none;
         margin: 0;
     }
 
     nav a {
         padding: 15px 0;
+        border: 0;
+        border-bottom: 1px black solid;
     }
 
     #portfolioContent {

@@ -1,3 +1,6 @@
+let mainNav = document.querySelector(".main-navigation");
+let navMenuBtn = document.getElementById("nav-menu-button");
+
 function copyText(e) {
     //if not left click return
     if (e.which != 1) return;
@@ -40,5 +43,9 @@ email.addEventListener("mouseleave", () => email.className = '');
 email.addEventListener("mouseover", () => email.className = 'hovered');
 email.addEventListener("mousedown", copyText);
 document.addEventListener("scroll", scrollFunc);
+navMenuBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    mainNav.classList.toggle("extended")
+});
 
 scrollFunc();
