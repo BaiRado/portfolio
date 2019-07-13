@@ -40,7 +40,6 @@ function scrollFunc() {
 }
 
 email.addEventListener("mouseleave", () => email.className = '');
-email.addEventListener("mouseover", () => email.className = 'hovered');
 email.addEventListener("mousedown", copyText);
 document.addEventListener("scroll", scrollFunc);
 navMenuBtn.addEventListener("click", (e) => {

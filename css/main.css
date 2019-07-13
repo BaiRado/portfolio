@@ -3,6 +3,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+::selection {
+    background: #000;
+    color: #FFF;
+}
+
 a, 
 a:visited, 
 a:hover, 
@@ -219,8 +224,36 @@ h2 {
 
 #email {
     cursor: pointer;
-    padding: 5px;
+    padding: 5px 5px 9px 5px;
     font-size: 1.1em;
+}
+
+#email:after {    
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    width: 9%;
+    left: 45.1%;
+    transition: all 0.25s;
+    
+    visibility: hidden;
+    margin-top: 24px;
+    background-color: transparent;
+    color: transparent;
+    content: "";
+}
+
+/* tooltip style and text */
+#email:hover:after {
+    visibility: visible;
+    margin-top: 30px;
+    background-color: rgb(200, 200, 200);
+    color: black;
+    content: "Click to copy";
+}
+
+#email.copied:hover:after {
+    content: "Copied to clipboard";
 }
 
 #gitLink {
@@ -231,36 +264,6 @@ h2 {
 #gitLink:hover {
     background:white;
     color: black;
-}
-
-/* tooltip style and text */
-#email.copied:after {
-    content: "Copied to clipboard";
-    background-color: rgb(200, 200, 200);
-    border-radius: 5px;
-    color: black;
-    padding: 5px;
-    position: absolute;
-    width: 9%;
-    left: 45.1%;
-    margin-top: 30px;
-}
-
-#email.hovered:after {
-    content: "Click to copy";
-    background-color: rgb(200, 200, 200);
-    border-radius: 5px;
-    color: black;
-    padding: 5px;
-    position: absolute;
-    width: 9%;
-    left: 45.1%;
-    margin-top: 30px;
-}
-
-::selection {
-    background: #000;
-    color: #FFF;
 }
 
 @media screen and (max-width: 1023px){
