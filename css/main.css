@@ -232,13 +232,16 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: inherit;
+    width: 260px;
     /* height: 109px; */
     /* height: 138px; */
     /* height: 226px; */
     height: 238px;
     margin-top: -12px;
     transition: 0.4s;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 0px 30px;
     /* margin-top: 90px; */
     /* text-shadow: 2px 2px 4px #000; */
     z-index: 2;
@@ -261,7 +264,7 @@ h2 {
     /* background: #2C2C2C; */
     /* color: #000000; */
     /* border-top: 1px black solid; */
-    text-shadow: 2px 2px 4px #fff;
+    text-shadow: 2px 2px 5px #fff;
 }
 
 .listingWrapper {
