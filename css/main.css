@@ -19,14 +19,10 @@ a {
 }
 
 nav {
-    /* position: fixed;
-    margin-left: 20px;
-    z-index: 20; */
     position: fixed;
     padding-left: 20px;
     z-index: 20;
     width: 100%;
-    /* background: rgb(200, 200, 200); */
     background: #2C2C2C;
     border-bottom: 2px black solid;
 }
@@ -46,21 +42,13 @@ nav li {
     margin: 5px;
 }
 
-/* nav li :hover {
-    background: #2b2e34;
-    color: #FFFFFF;
-} */
-
 nav a {
     display: block;
     text-align: center;
     font-weight: 800;
     text-transform: uppercase;
-    /* background: rgb(200, 200, 200); */
-    /* color: #000000;     */
     color: #cbcbcb;    
     padding: 10px 25px;
-    /* border: 1px black solid; */
 }
 
 nav a:hover { 
@@ -68,7 +56,6 @@ nav a:hover {
 }
 
 .active {
-    /* background: #FFFFFF; */
     color: #f2ad58;
 }
 
@@ -79,13 +66,25 @@ section {
 }
 
 #about {
+    background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(255, 255, 255, 0.1)),
+      to(rgba(44, 44, 44, 0.1))
+    ), url(../img/about.jpg);
+    background-image: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(44, 44, 44, 0.1)
+    ), url(../img/about.jpg);
+    background-image: -o-linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(44, 44, 44, 0.1)
+    ), url(../img/about.jpg);
     background-image: linear-gradient(
       rgba(255, 255, 255, 0.1),
-      rgba(0, 0, 0, 0.1)
+      rgba(44, 44, 44, 0.1)
     ), url(../img/about.jpg);
-    background-image: url(../img/about.jpg);
     background-size: cover;
-    /* background-attachment: fixed; */
     display: -webkit-box;   
     display: -ms-flexbox;   
     display: flex;
@@ -97,8 +96,6 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
     border-bottom: 3px black solid;
-    /* color: #F5F4F0; */
-    /* text-shadow: 4px 4px #000; */
 }
 
 #portfolio {
@@ -114,7 +111,6 @@ section {
     min-height: 400px;
     text-align: center;
     padding: 50px 0px 0px 0px;
-    /* background: #2b2e34; */
     background: #2C2C2C;
     color: #FFFFFF;
 }
@@ -190,18 +186,14 @@ h2 {
 }
 
 .portfolioListing {
-    /* border: 1px black solid; */
-    border: 1px white solid;
+    border: 1px rgb(220, 220, 220) solid;
     overflow: hidden;
-    /* width: 280px;
-    height: 200px; */
     width: 320px;
     height: 285px;
     background: #2C2C2C;
 }
 
 .portfolioThumb {
-    /* height: 200px; */
     height: 228px;
     width: auto;
     -webkit-transition: 0.4s;
@@ -218,13 +210,8 @@ h2 {
 
 .portfolioText {
     position: absolute;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(163, 166, 168, 0.65)), to(rgba(80, 80, 80, 0.65)));
-    background: -webkit-linear-gradient(rgba(163, 166, 168, 0.65), rgba(80, 80, 80, 0.65));
-    background: -o-linear-gradient(rgba(163, 166, 168, 0.65), rgba(80, 80, 80, 0.65));
-    background: linear-gradient(rgba(163, 166, 168, 0.65), rgba(80, 80, 80, 0.65));  */
-    /* color: #FFFFFF; */
+    visibility: hidden;
     color: transparent;
-    /* border-top: 1px black dotted; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,19 +220,15 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 260px;
-    /* height: 109px; */
-    /* height: 138px; */
-    /* height: 226px; */
     height: 238px;
+    padding: 0px 30px;
     margin-top: -12px;
-    transition: 0.4s;
     font-size: 1.2em;
     line-height: 1.6;
-    padding: 0px 30px;
-    /* margin-top: 90px; */
-    /* text-shadow: 2px 2px 4px #000; */
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
     z-index: 2;
-    visibility: hidden;
 }
 
 .portfolioText > h3 {
@@ -254,16 +237,8 @@ h2 {
 
 .portfolioListing:hover > .portfolioText {
     visibility: visible;
-    /* background: rgba(255, 255, 255, 0.8); */
     background: rgba(44, 44, 44, 0.8);
-    color: white;
-    /* margin-top: 5px;
-    margin-left: 10px;
-    height: 200px;
-    width: 300px; */
-    /* background: #2C2C2C; */
-    /* color: #000000; */
-    /* border-top: 1px black solid; */
+    color: #fff;
     text-shadow: 2px 2px 5px #fff;
 }
 
@@ -279,11 +254,8 @@ h2 {
 
 .extraLink {
     background: rgb(130, 130, 130);
-    /* padding: 5px; */
-    /* border: 1px black solid;
-    border-top: none; */
     padding: 10px;
-    border: 1px white solid;
+    border: 1px rgb(220, 220, 220) solid;
     border-top: none;
 }
 
