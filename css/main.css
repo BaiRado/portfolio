@@ -140,6 +140,7 @@ h2 {
 
 #portfolio > h2 {
     margin-bottom: 0;
+    padding-bottom: 50px;
 }
 
 #contact > h2 {
@@ -329,6 +330,7 @@ h2 {
 }
 
 #gitLink {
+    margin: 5px;
     padding: 8px 28px;
     border: 1px white solid;
 }
