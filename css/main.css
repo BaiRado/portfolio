@@ -149,7 +149,8 @@ h2 {
 
 #languagesList {
     list-style: none;
-    margin: 0px;
+    background: #2c2c2c;
+    margin: 0 auto;
     padding: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -159,6 +160,8 @@ h2 {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    border: 2px #ed9220 solid;
+    border-radius: 15px;
 }
 
 #languagesList li {
@@ -170,7 +173,8 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 15px;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    color: white;
 }
 
 #languagesList img {
