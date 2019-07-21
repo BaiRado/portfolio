@@ -240,7 +240,7 @@ h2 {
     visibility: visible;
     background: rgba(44, 44, 44, 0.8);
     color: #fff;
-    text-shadow: 2px 2px 5px #fff;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .listingWrapper {
@@ -356,7 +356,7 @@ h2 {
 
     #nav-menu-button {
         display: block;
-        background: #2b2e34;
+        background: #2C2C2C;
         padding: 15px 20px;
     }
 
