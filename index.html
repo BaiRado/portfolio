@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="index.css">
 
 
 </head>
@@ -41,21 +41,90 @@
         <section id="about">
             <h1>Radoslav Georgiev</h1>
             <h2>Software Developer</h2>
-            <p>Self-motivated software developer focused on crafting clean & user‑friendly experiences.</p>
-            <ul id="languagesList">
-                <li>HTML<img src="img/logos/html.png" alt="HTML logo" width="100" height="100"></li>
-                <li>CSS<img src="img/logos/css.png" alt="CSS logo" width="100" height="100"></li>
-                <li>JavaScript<img src="img/logos/javascript.png" alt="Javascript logo" width="100" height="100"></li>
-                <li>Node.js<img src="img/logos/nodejs.png" alt="NodeJS logo" width="100" height="100"></li>
-                <li>React<img src="img/logos/react.png" alt="React logo" width="100" height="100"></li>
-                <li>Redux<img src="img/logos/redux.svg" alt="Redux logo" width="100" height="100"></li>
-                <li>Bootstrap<img src="img/logos/bootstrap.svg" alt="Bootstrap logo" width="100" height="100"></li>
-            </ul>
+            <p>Self-motivated software developer with years of experience working on a variety of projects,
+                using different programming languages and technologies. My focus is on creating and delivering great end
+                products, with a focal point of ease of use, clarity and functionality for both the end user and back
+                end.</p>
         </section>
 
         <section id="portfolio">
             <h2>Portfolio</h2>
             <div id="portfolioContent">
+                <!-- Procedural map generation -->
+                <div class="listingWrapper">
+                    <a href="https://f141e.csb.app/" class="portfolioListing">
+                        <h3>Procedural map generation</h3>
+                        <div class="portfolioText">
+                            <p class="portfolioDetails">A seeded polygon tile based procedural map generator written in
+                                Javascript. Includes more than 60 possible biomes for each tile depending on factors
+                                such as temeprature, humidity, elevation, surrounding rivers, etc...</p>
+                        </div>
+                        <img class="portfolioThumb" src="img/cards/map-gen.png" alt="Map generation image">
+                    </a>
+                    <a href="https://github.com/BaiRado/javascript-practice/tree/master/procedural-generation"
+                        class="extraLink" target="_blank">View code</a>
+                </div>
+
+                <!-- Game jam - Evade the reaction -->
+                <div class="listingWrapper">
+                    <a href="https://bairado.itch.io/evade-the-reaction/" class="portfolioListing">
+                        <h3>Game jam - Evade the reaction</h3>
+                        <div class="portfolioText">
+                            <p class="portfolioDetails">A minigame I created for fun as part of a game jam. The game was
+                                made in 2 days using Godot and GDScript. The theme for the game jam was "chain
+                                reaction".</p>
+                        </div>
+                        <img class="portfolioThumb" src="img/cards/evade-the-reaction.png"
+                            alt="Evade the reaction image">
+                    </a>
+                    <!-- <a href="https://github.com/BaiRado"
+                        class="extraLink" target="_blank">View code</a> -->
+                </div>
+
+                <!-- Sorting algorithms visualization -->
+                <div class="listingWrapper">
+                    <a href="https://5ppmv.csb.app/" class="portfolioListing">
+                        <h3>Sorting algorithms visualization</h3>
+                        <div class="portfolioText">
+                            <p class="portfolioDetails">A mini project to visualize common sorting algorithms.</p>
+                        </div>
+                        <img class="portfolioThumb" src="img/cards/sort-visualization.png"
+                            alt="Sorting algorithms visualization image">
+                    </a>
+                    <a href="https://github.com/BaiRado/javascript-practice/tree/master/algorithms/sort"
+                        class="extraLink" target="_blank">View code</a>
+                </div>
+
+                <!-- Maze generating visualization -->
+                <div class="listingWrapper">
+                    <a href="https://snc0u.csb.app/" class="portfolioListing">
+                        <h3>Maze generating visualization</h3>
+                        <div class="portfolioText">
+                            <p class="portfolioDetails">A visualization of popular maze building algorithms.
+                                The maze builder was to be a small add-on to use with my pathfinding visualization
+                                project, but ended up expanding a lot more than originally planned.</p>
+                        </div>
+                        <img class="portfolioThumb" src="img/cards/maze-builder.png" alt="Maze builder image">
+                    </a>
+                    <a href="https://github.com/BaiRado/javascript-practice/tree/master/maze-builder" class="extraLink"
+                        target="_blank">View code</a>
+                </div>
+
+                <!-- Pathfinding visualization -->
+                <div class="listingWrapper">
+                    <a href="https://mgto3.csb.app/" class="portfolioListing">
+                        <h3>Pathfinding visualization</h3>
+                        <div class="portfolioText">
+                            <p class="portfolioDetails">Visualization of AStar and Dijkstra's pathfinding algorithms
+                                written in JavaScript. There are options to add obstacles that block or slow
+                                pathfinding, or to create a maze.</p>
+                        </div>
+                        <img class="portfolioThumb" src="img/cards/pathfinding.png" alt="Pathfinding image">
+                    </a>
+                    <a href="https://github.com/BaiRado/javascript-practice/tree/master/pathfinding" class="extraLink"
+                        target="_blank">View code</a>
+                </div>
+
                 <!-- Tower of Hanoi visualization -->
                 <div class="listingWrapper">
                     <a href="https://z02l2.codesandbox.io/" class="portfolioListing">
@@ -100,10 +169,16 @@
                     <a href="https://github.com/BaiRado/javascript-practice/tree/master/racing-game" class="extraLink"
                         target="_blank">View code</a>
                 </div>
+            </div>
 
+
+            <div id="olderProjectsBtn">Show older projects<i class="arrow down"></i></div>
+
+
+            <div id="portfolioContentOld" class="hidden">
                 <!-- Synth Piano - React -->
                 <div class="listingWrapper">
-                    <a href="https://v1d2g.codesandbox.io/" class="portfolioListing">
+                    <a href="https://v1d2g.csb.app/" class="portfolioListing">
                         <h3>Synth Piano - React</h3>
                         <div class="portfolioText">
                             <p class="portfolioDetails">A small React application made with the help of the popular Web
@@ -215,12 +290,11 @@
                 <a id="emailLink" href="mailto:radobgeorgiev@gmail.com" target="_blank" rel="nofollow">Email Me</a>
                 <p><span id="email">radobgeorgiev@gmail.com</span></p>
                 <a id="gitLink" href="https://github.com/BaiRado" target="_blank">GitHub</a>
-                <!-- <a id="gitLink" href="https://linkedin.com/in/BaiRado" target="_blank">LinkedIn</a> -->
             </div>
         </footer>
     </main>
 
-    <script src="js/main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

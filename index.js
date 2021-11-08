@@ -1,5 +1,6 @@
 const mainNav = document.querySelector(".main-navigation");
 const navMenuBtn = document.getElementById("nav-menu-button");
+const olderProjectsBtn = document.getElementById("olderProjectsBtn");
 
 function copyText(e) {
     //if not left click return
@@ -19,6 +20,15 @@ function copyText(e) {
     document.body.removeChild(areaEl);
     // create tooltip class to display text
     this.className = 'copied';
+}
+
+function toggleOlderProjects() {
+    portfolioContentOld.classList.toggle("hidden");
+    if (portfolioContentOld.classList.contains("hidden")) {
+        olderProjectsBtn.innerHTML = 'Show older projects<i class="arrow down"></i>'
+    } else {
+        olderProjectsBtn.innerHTML = 'Hide older projects<i class="arrow up"></i>'
+    }
 }
 
 function scrollFunc() {
@@ -41,6 +51,7 @@ function scrollFunc() {
 
 email.addEventListener("mouseleave", () => email.className = '');
 email.addEventListener("mousedown", copyText);
+olderProjectsBtn.addEventListener("click", toggleOlderProjects);
 document.addEventListener("scroll", scrollFunc);
 navMenuBtn.addEventListener("click", (e) => {
     e.preventDefault();
