@@ -105,7 +105,10 @@ section {
     min-height: 400px;
     text-align: center;
     padding: 50px 0px 0px 0px;
-    background: #2C2C2C;
+    background-image: url("./img/contact.png");
+    background-color: #2C2C2C;
+    background-repeat: no-repeat;
+    background-position: top;
     color: #FFFFFF;
 }
 
